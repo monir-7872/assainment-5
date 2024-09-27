@@ -5,7 +5,7 @@ document.getElementById('donate-btn').addEventListener('click',function(event){
     const availableAmount = getTextFieldValueById('available-tk')
 
     if(addingAmount > 0 && addingAmount < availableAmount ){
-        alert('Are you sure ?')
+        document.getElementById('open-modal-btn').click();
         const addAmount = availableAmount - addingAmount;
         const totalDonatingAmount = addingAmount + donatingAmount;
        document.getElementById('available-tk').innerText = addAmount;
@@ -34,11 +34,12 @@ document.getElementById('donate-btn-1').addEventListener('click',function(event)
     const availableAmount = getTextFieldValueById('available-tk')
 
     if(addingAmount > 0 && addingAmount < availableAmount ){
-        alert('Are you sure ?')
+        document.getElementById('open-modal-btn-1').click();
         const addAmount = availableAmount - addingAmount;
         const totalDonatingAmount = addingAmount + donatingAmount;
        document.getElementById('available-tk').innerText = addAmount;
        document.getElementById('donate-tk-1').innerText = totalDonatingAmount;
+       
            // add to donation history
            const div = document.createElement('div');
            const dateFormat=new Date();
@@ -62,11 +63,12 @@ document.getElementById('donate-btn-2').addEventListener('click',function(event)
     const availableAmount = getTextFieldValueById('available-tk')
 
     if(addingAmount > 0 && addingAmount < availableAmount ){
-        alert('Are you sure ?')
+        document.getElementById('open-modal-btn-2').click();
         const addAmount = availableAmount - addingAmount;
         const totalDonatingAmount = addingAmount + donatingAmount;
        document.getElementById('available-tk').innerText = addAmount;
        document.getElementById('donate-tk-2').innerText = totalDonatingAmount;
+       
            // add to donation history
            const div = document.createElement('div');
            const dateFormat=new Date();
